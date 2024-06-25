@@ -77,16 +77,6 @@ def main():
     desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
     archivo_ruta = os.path.join(desktop_path, archivo_txt)
 
-    if not os.path.exists(archivo_ruta):
-        print(f"No se encontró el archivo '{archivo_txt}' en el escritorio.")
-        return
-
-    # Leer las palabras del archivo
-    with open(archivo_ruta, 'r', encoding='utf-8') as file:
-        palabras = file.read().split()
-
-    # Mostrar cuántas palabras hay disponibles
-
     print("""
 
 
@@ -105,7 +95,169 @@ def main():
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """)
+
+    if not os.path.exists(archivo_ruta):
+        print(f"No se encontró el archivo '{archivo_txt}' en el escritorio.")
+        time.sleep(5)
+        return
+
+    # Leer las palabras del archivo
+    with open(archivo_ruta, 'r', encoding='utf-8') as file:
+        palabras = file.read().split()
+
+    # Mostrar cuántas palabras hay disponibles
+
     #print(f"Hay {len(palabras)} palabras disponibles para practicar.")
 
     # Preguntar cuántas palabras desea escuchar
