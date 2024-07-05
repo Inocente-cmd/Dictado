@@ -31,6 +31,7 @@ for i in range(1):
         pass
         #print(f"El archivo existe.")
     else:
+        print("\n" * 300000)
         print(f"El archivo no existe.")
         print("Tiene que crear un archivo llamado 'Palabras.txt' que adentro debe contener las palabras que va a practicar")
         crash = "si"
@@ -38,7 +39,7 @@ for i in range(1):
         break
 
 if crash == "si":
-    print("Crashed... No existe el archivo 'Palabras.txt'")
+    #print("Crashed... No existe el archivo 'Palabras.txt'")
     time.sleep(2)
 else:
     for i in range(1):
@@ -121,7 +122,7 @@ else:
                     print("Opción inválida. Inténtalo de nuevo.")
 
             return False, idx_actual
-        print("\n" * 300000)
+        
 
         lan = str(input("¿Cuál es el idioma de las palabras Zh/En?: ")).strip().lower()
         palabras = enumerar_palabras(archivo_txt)
