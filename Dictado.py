@@ -124,9 +124,9 @@ else:
             return False, idx_actual
         
         print("\n" * 300000)
-        print("""***Nota: Antes de precionar el boton de cerra, debe precionar 5 para que el programa deje de ejecurtarse por si solo***""")
+        print("""Nota: Antes de precionar el boton de cerra, debe precionar 5 para que el programa deje de ejecurtarse por si solo""")
         print("""Usted se va a ser carga si no obedece lo de arriba""")
-        input("")
+        input("Precione Enter para aceptar y continuar: ")
         lan = str(input("¿Cuál es el idioma de las palabras Zh/En?: ")).strip().lower()
         palabras = enumerar_palabras(archivo_txt)
 
