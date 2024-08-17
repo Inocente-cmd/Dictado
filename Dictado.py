@@ -123,7 +123,7 @@ else:
 
             return False, idx_actual
         
-
+        print("\n" * 300000)
         lan = str(input("¿Cuál es el idioma de las palabras Zh/En?: ")).strip().lower()
         palabras = enumerar_palabras(archivo_txt)
 
