@@ -124,8 +124,7 @@ else:
             return False, idx_actual
         
         print("\n" * 300000)
-        print("""Nota: Antes de precionar el boton de cerra, debe precionar 5 para que el programa deje de ejecurtarse por si solo""")
-        print("""      Usted se va a ser carga si no obedece lo de arriba""")
+        print("""Nota: Para salir del programa hay que escribir el numero 5, de lo contrario el programa no va a poder hacer bien su funcion. Si usted no escribe el numero 5, ya sera bajo su responsabilidad""")
         print("")
         input("Precione Enter para aceptar y continuar: ")
         lan = str(input("¿Cuál es el idioma de las palabras Zh/En?: ")).strip().lower()
